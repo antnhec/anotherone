@@ -13,10 +13,18 @@
       background="color: #000"
       environment="preset: forest; groundColor: #445; skyColor: #111">
 
-      <!-- ASSETS -->
-      <a-assets>
-        <a-asset-item id="car-obj" src="assets/car.obj"></a-asset-item>
-      </a-assets>
+     <a-assets>
+  <a-asset-item id="car-obj" src="assets/car.obj"></a-asset-item>
+</a-assets>
+
+<a-entity
+  obj-model="obj: #car-obj"
+  material="color: white; roughness: 0.8; metalness: 0.1"
+  position="0 0 -5"
+  rotation="0 180 0"
+  scale="0.01 0.01 0.01">
+</a-entity>
+
 
       <!-- LIGHTS -->
       <a-light type="ambient" intensity="1"></a-light>
